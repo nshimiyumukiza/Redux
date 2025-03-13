@@ -12,7 +12,7 @@ const Home = () => {
           I'M NSHIMIYUMUKIZA Erneste 
         </h1>
         <p className="text-2xl font-medium py-5 px-8 w-96">i have the puprose of being a good developer in futer day and geting 
-          more moneny and my self and my fammilly
+          more moneny and take care my self and my fammilly
         </p>
 
       </div>
