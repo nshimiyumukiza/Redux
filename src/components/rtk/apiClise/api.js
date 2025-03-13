@@ -13,16 +13,22 @@ export const ApiClientFile = createApi({
             return headers;
         }
     }),
-
+   tagTypes:["getUser","getImage"],
     endpoints: (builder) => ({
+        getUser:builder.query({
+            query:()=> "users",
+            providesTags:["getUser"]
+        }),
         registration: builder.mutation({
             query: ({ name, email, password, confirmPassword }) => ({
                 url: "users",
                 method: "POST",
                 body: { name, email, password, confirmPassword }
-            })
-        })
+            }),
+            invalidatesTags:["getUser"]
+        }),
+       
     })
 });
 
-export const { useRegistrationMutation } = ApiClientFile;
+export const { useRegistrationMutation ,useGetUserQuery} = ApiClientFile;

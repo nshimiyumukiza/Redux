@@ -1,11 +1,14 @@
+
 import useSignUp from "./hooks/use-signup"
 
 const Register = () => {
     
   const {handleChange,HandleSignup,formData,error} = useSignUp()
+  
 
   return (
-    <div className="bg-gray-100 ">
+    <>
+       <div className="bg-gray-100 ">
       <div>
         <h1 className="text-3xl font-bold text-center pt-4">Wellcome !</h1>
         <p className="text-lg text-center pt-5">Regester enable to be use This Website very Well no worry all is good</p>
@@ -45,6 +48,7 @@ const Register = () => {
       </div>
 
     </div>
+    </>
   )
 }
 
